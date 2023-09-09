@@ -3,9 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * return: Always return (0)
+ * main - This function is the entry point of the program
+ * Return: Always return (0) if the program runs successfully
  */
+
 int main(void)
 {
 	int n;
