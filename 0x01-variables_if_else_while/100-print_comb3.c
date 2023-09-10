@@ -6,18 +6,18 @@
 
 int main(void)
 {
-	int singles = '0';
+	int single = '0';
 	int doubles = '0';
 
-	for (singles = '0'; singles <= '9'; singles++)
+	for (single = '0'; single <= '9'; single++)
 	{
 		for (doubles = '0'; doubles <= '9'; doubles++)
 		{
-			if (doubles > singles)
+			if (doubles > single)
 			{
-				putchar(singles);
+				putchar(single);
 				putchar(doubles);
-				if (!(singles == '9' && doubles == '8'))
+				if (!(single == '9' && doubles == '8'))
 				{
 					putchar(',');
 					putchar(' ');
