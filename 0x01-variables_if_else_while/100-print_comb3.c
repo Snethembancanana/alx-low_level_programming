@@ -9,11 +9,11 @@ int main(void)
 	int singles = '0';
 	int doubles = '0';
 
-	for (singles = '0'; singles >= '9'; singles++)
+	for (singles = '0'; singles <= '9'; singles++)
 	{
-		for (doubles = '0'; doubles < '9'; doubles++)
+		for (doubles = '0'; doubles <= '9'; doubles++)
 		{
-			if (!(singles == doubles) || (singles > doubles))
+			if (doubles > singles)
 			{
 				putchar(singles);
 				putchar(doubles);
