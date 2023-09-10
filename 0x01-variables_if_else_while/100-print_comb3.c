@@ -6,8 +6,8 @@
 
 int main(void)
 {
-	int zeros = '0';
-	int doubles = '0';
+	int zeros;
+	int doubles;
 
 	for (zeros = '0'; zeros <= '9'; zeros++)
 	{
