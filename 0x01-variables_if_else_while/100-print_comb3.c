@@ -6,18 +6,18 @@
 
 int main(void)
 {
-	int zeros;
-	int doubles;
+	int z;
+	int d;
 
-	for (zeros = '0'; zeros <= '9'; zeros++)
+	for (z = 48; z <= 56; z++)
 	{
-		for (doubles = '0'; doubles <= '9'; doubles++)
+		for (d = 49; d <= 57; d++)
 		{
-			if (doubles > zeros)
+			if (d > z)
 			{
-				putchar(zeros);
-				putchar(doubles);
-				if (!(zeros == '9' && doubles == '8'))
+				putchar(z);
+				putchar(d);
+				if (!(z == 56 && d == 57))
 				{
 					putchar(',');
 					putchar(' ');
