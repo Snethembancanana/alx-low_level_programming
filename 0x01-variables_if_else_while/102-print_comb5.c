@@ -6,32 +6,24 @@
 
 int main(void)
 {
-	int z;
-	int a;
-	int b;
-	int c;
+	int x; 
+	int y;
 
-	for (z = 96; z < 99; z++)
+	for (x = 0; x < 100; x++)
 	{
-		for (a = 97; a < 99; a++)
+		for (y = 0; y < 100; y++)
 		{
-			for (b = 98; b < 99; b++)
+			if (x < y)
 			{
-				for (c = 99; c < 100; c++)
+				putchar((x / 10) + 48);
+				putchar((x / 10) + 48);
+				putchar(' ');
+				putchar((y / 10) + 48);
+				putchar((y / 10) + 48);
+				if (x != 98 || y != 99)
 				{
-					if (c > b && b > a && a > z)
-					{
-						putchar(z);
-						putchar(a);
-						putchar(b);
-						putchar(c);
-						if (z != 80 || a != 81 || b != 82)
-						{
-							putchar(' ');
 							putchar(',');
 							putchar(' ');
-						}
-					}
 				}
 			}
 		}
