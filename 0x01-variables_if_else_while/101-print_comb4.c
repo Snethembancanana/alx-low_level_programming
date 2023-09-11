@@ -6,22 +6,22 @@
 
 int main(void)
 {
-	int z;
-	int o;
-	int t;
+	int a;
+	int b;
+	int c;
 
-	if (z = 0; z <= 789; z++)
+	if (a = 48; a < 58; a++)
 	{
-		if (o = 0; o <= 789; o++)
+		if (b = 49; b < 58; b++)
 		{
-			if (t = 0; t <= 789; t++)
+			if (c = 50; c < 58; c++)
 			{
-				if (z < o < t)
+				if (a < b && b < c)
 				{
-					putchar(z);
-					putchar(o);
-					putchar(t);
-					if (!(z == 789 && o == '248' && t == '358'))
+					putchar(a);
+					putchar(b);
+					putchar(c);
+					if (!(a == 55 && b == 56 ))
 					{
 						putchar(',');
 						putchar(' ');
