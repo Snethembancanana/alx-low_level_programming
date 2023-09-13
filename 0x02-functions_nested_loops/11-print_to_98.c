@@ -9,17 +9,17 @@ void print_to_98(int n)
 {
 	if (n < 98)
 	{
-		printf("natural number is %d and is less than 98\n", n);
+		printf("%d\n", n);
 		n++;
 	}
 	else if (n == 98)
 	{
-		printf("natural number is %d is 98\n", n);
+		printf("%d, ", n);
 	}
 	else
 	{
-		printf("natural number is %d and is greater than 98\n", n);
+		printf("%d, ", n);
 		n--;
 	}
+	printf("%d\n", n);
 }
-
