@@ -9,7 +9,7 @@ void times_table(void)
 	int hori;
 	int outcome;
 	int modulus;
-	int w;
+	int whole;
 
 	for (vert = 0; vert <= 9; vert++)
 	{
@@ -17,7 +17,7 @@ void times_table(void)
 		{
 			outcome = vert * hori;
 			modulus = outcome % 10;
-			w = outcome / 10;
+			whole = outcome / 10;
 
 			if (hori == 0)
 			{
