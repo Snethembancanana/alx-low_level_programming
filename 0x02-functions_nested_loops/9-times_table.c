@@ -17,7 +17,7 @@ void times_table(void)
 		{
 			outcome = vert * hori;
 			modulus = outcome % 10;
-			whole = outcome / 10;
+			whole = (outcome - modulus) / 10;
 
 			if (hori == 0)
 			{
