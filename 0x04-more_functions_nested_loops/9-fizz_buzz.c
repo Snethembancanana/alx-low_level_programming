@@ -26,9 +26,12 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		printf("%d", value);
-			if (value == 100)
-				continue;
+		else
+		{
+			printf("%d", value);
+		}
+		if (value == 100)
+			continue;
 		printf(" ");
 	}
 	printf("\n");
