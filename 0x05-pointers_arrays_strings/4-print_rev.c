@@ -19,6 +19,7 @@ void print_rev(char *s)
 	for (z = bunch; z > 0; z++)
 	{
 		_putchar(*s);
+		s--;
 	}
 	_putchar('\n');
 }
