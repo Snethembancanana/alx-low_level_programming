@@ -4,6 +4,7 @@
  * reverse_array - reverses the content of an array of integers.
  * @a: base address.
  * @n: number of elements of an array.
+ *Rerurn: void
  */
 
 void reverse_array(int *a, int n)
