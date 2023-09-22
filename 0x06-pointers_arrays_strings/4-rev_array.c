@@ -11,11 +11,6 @@ void reverse_array(int *a, int n)
 	int index;
 	char temp;
 
-
-	while (a[index] != '\0')
-	{
-		index++;
-	}
 	for (index = 0; index < n--; index++)
 	{
 		temp = a[index];
