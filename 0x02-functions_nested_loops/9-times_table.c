@@ -5,39 +5,32 @@
 
 void times_table(void)
 {
-	int vert;
-	int hori;
-	int outcome;
-	int modulus;
-	int whole;
+	int i, j, k;
 
-	for (vert = 0; vert <= 9; vert++)
+	for (i = 0; i < 10; i++)
 	{
-		for (hori = 0; hori <= 9; hori++)
+		for (j = 0; j < 10; j++)
 		{
-			outcome = vert * hori;
-			modulus = outcome % 10;
-			whole = (outcome - modulus) / 10;
-
-			if (hori == 0)
+			k = j * i;
+			if (j == 0)
 			{
-				_putchar('0');
+				_putchar(k + '0');
 			}
-			else if (outcome < 10)
+			if (k < 10 && j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(modulus + '0');
+				_putchar(k + '0');
 			}
-			else
+			else if (k >= 10)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(modulus + '0');
+				_putchar(k / 10 + '0');
+				_putchar(k % 10 + '0');
 			}
 		}
 		_putchar('\n');
 	}
 }
-
